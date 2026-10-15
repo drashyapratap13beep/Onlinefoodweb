@@ -1,0 +1,6 @@
+{
+  "name": "Pain & Miel Artisan Bakery",
+  "description": "Handcrafted artisan bakery menu, online ordering for pickup & delivery, and real-time manager dashboard with category sales analytics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

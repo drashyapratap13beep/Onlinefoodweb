@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Fraunces", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --color-warm-bg: #FAF6F0;
+  --color-warm-cream: #F4ECE1;
+  --color-warm-card: #FFFFFF;
+  --color-crust-900: #1B140E;
+  --color-crust-800: #261D15;
+  --color-crust-700: #3E3024;
+  --color-crust-500: #786457;
+  --color-crust-300: #C7B8AA;
+  --color-saffron-600: #C85A17;
+  --color-saffron-500: #DE6B1F;
+  --color-saffron-100: #FDF1E6;
+  --color-honey-500: #C97A2B;
+  --color-honey-600: #B2651F;
+  --color-flour-50: #FAF6F0;
+  --color-flour-100: #F3EAE0;
+  --color-veg-green: #0E8044;
+  --color-nonveg-red: #A83232;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #FAF6F0;
+  color: #261D15;
+  overflow-x: hidden;
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+/* Butter-smooth micro-animations */
+.smooth-butter {
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: translateZ(0);
+}
+
+/* Touch active feedback */
+.touch-press {
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+.touch-press:active {
+  transform: scale(0.96);
+  opacity: 0.92;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #D8CCC0;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B9A899;
+}
+
+/* Hide scrollbar for clean horizontal scrolls */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
